@@ -24,6 +24,7 @@ def login(self, email, password):
     self.set_email(email)
     self.set_password(password)
     self.click_sign_in_button()
+´´´
 
 # Exercise 2: Create a Step for the Registration Page
 
