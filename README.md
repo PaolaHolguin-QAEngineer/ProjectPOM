@@ -19,12 +19,11 @@ You are given multiple methods to simulate user actions, such as filling in an e
    - `click_sign_in_button()` – clicks the sign-in button.
 
 2. **Create a new method `login()`, combining all three**:  
-```python
+python
 def login(self, email, password):
     self.set_email(email)
     self.set_password(password)
     self.click_sign_in_button()
-´´´
 
 # Exercise 2: Create a Step for the Registration Page
 
@@ -39,7 +38,7 @@ Create a step that automates the entire user registration process, combining the
 
 ### Python Code Example:
 
-```python
+python
 def register(self, email, password):
     self.set_email(email)
     self.set_password(password)
@@ -57,7 +56,7 @@ Write an automated test to validate the **Occupation** text field on the main pa
 
 ### Python Code Example:
 
-```python
+python
 description = self.driver.find_element(*self.occupation_field).text
 assert description == "Expected Occupation"
 
@@ -73,7 +72,7 @@ After logging in, verify that the user's email appears in the header of the main
 
 ### Python Code Example:
 
-```python
+python
 email = "user@example.com"
 header_page = HeaderPageAround(self.driver)
 assert header_page.email_text.text == email
